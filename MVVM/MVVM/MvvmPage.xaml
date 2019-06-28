@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM.MvvmPage">
+
+    <StackLayout>
+        <Label Text="Name"/>
+        <Entry Placeholder="Full Name" Text="{Binding Name}"/>
+        <Label Text="Website"/>
+        <Entry Placeholder="Your Website" Text="{Binding WebSite}"/>
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label Text="Best Friend"/>
+            <Switch IsToggled="{Binding BestFriend}"/>
+        </StackLayout>
+        <Label Text="{Binding DisplayMessage}"/>
+        <Button Text="Open Website"/>
+        <Button Text="Save Contact"/>
+        <ActivityIndicator/>
+
+    </StackLayout>
+
+</ContentPage>
