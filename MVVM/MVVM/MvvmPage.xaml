@@ -9,13 +9,13 @@
         <Label Text="Website"/>
         <Entry Placeholder="Your Website" Text="{Binding WebSite}"/>
         <StackLayout Orientation="Horizontal" Spacing="10">
-            <Label Text="Best Friend"/>
+            <Label Text="Best Friend?"/>
             <Switch IsToggled="{Binding BestFriend}"/>
         </StackLayout>
         <Label Text="{Binding DisplayMessage}"/>
-        <Button Text="Open Website"/>
-        <Button Text="Save Contact"/>
-        <ActivityIndicator/>
+        <Button Text="Open Website" Command="{Binding LaunchWebsiteCommand}"/>
+        <Button Text="Save Contact" Command="{Binding SaveContactcommand}"/>
+        <ActivityIndicator IsRunning="{Binding IsBusy}"/>
 
     </StackLayout>
 
